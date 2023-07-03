@@ -31,8 +31,9 @@ class apiRequestModel: ObservableObject {
             }
             //convert to json
             do{
+//                let courses = try JSONDecoder().decode([Course].self, from: data)
                 let courses = try JSONDecoder().decode([Course].self, from: data)
-                print(courses)
+//                print(courses)
                 DispatchQueue.main.async {
                     self?.courses = courses
                 }

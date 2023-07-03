@@ -7,15 +7,21 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     @StateObject var ApiRequestModel = apiRequestModel()
+    @StateObject var ApiPostModel = apiPostModel()
+    @State var titleInput = ""
+    @State var bodyInput = ""
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("API Get Request")
+            Text("API Post Request")
+            
             List{
                 ForEach(ApiRequestModel.courses, id: \.self){course in
                     Text(course.title)
@@ -25,11 +31,38 @@ struct ContentView: View {
                         .font(.caption)
                 }
             }
+            VStack {
+                Text("Make a POST request")
+                    .font(.title2)
+                .bold()
+                HStack{
+                    Text("Title: ")
+                    TextField("Enter title here", text: $titleInput)
+                                   .textFieldStyle(RoundedBorderTextFieldStyle())
+        //                           .padding()
+                    Spacer()
+                }
+                HStack{
+                    Text("Body:")
+                    TextField("Enter body here", text: $bodyInput)
+                                   .textFieldStyle(RoundedBorderTextFieldStyle())
+        //                           .padding()
+                    Spacer()
+                }
+                
+                
+                Button("POST"){
+                    ApiPostModel.postReq(title: titleInput, body: bodyInput)
+                }
+            }
+            
+          
         }
         .padding()
         .onAppear(){
             ApiRequestModel.fetch()
         }
+        
     }
 }
 

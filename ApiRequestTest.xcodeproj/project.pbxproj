@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C875E1562A52E80F003437FB /* apiPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875E1552A52E80F003437FB /* apiPostModel.swift */; };
 		C8C4F0222A51261A00379584 /* ApiRequestTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C4F0212A51261A00379584 /* ApiRequestTestApp.swift */; };
 		C8C4F0242A51261A00379584 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C4F0232A51261A00379584 /* ContentView.swift */; };
 		C8C4F0262A51261B00379584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8C4F0252A51261B00379584 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C875E1552A52E80F003437FB /* apiPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiPostModel.swift; sourceTree = "<group>"; };
 		C8C4F01E2A51261A00379584 /* ApiRequestTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiRequestTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C4F0212A51261A00379584 /* ApiRequestTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestTestApp.swift; sourceTree = "<group>"; };
 		C8C4F0232A51261A00379584 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				C8C4F0212A51261A00379584 /* ApiRequestTestApp.swift */,
 				C8C4F0232A51261A00379584 /* ContentView.swift */,
+				C875E1552A52E80F003437FB /* apiPostModel.swift */,
 				C8C4F02F2A5141C600379584 /* apiRequestModel.swift */,
 				C8C4F0252A51261B00379584 /* Assets.xcassets */,
 				C8C4F0272A51261B00379584 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				C8C4F0302A5141C600379584 /* apiRequestModel.swift in Sources */,
 				C8C4F0242A51261A00379584 /* ContentView.swift in Sources */,
+				C875E1562A52E80F003437FB /* apiPostModel.swift in Sources */,
 				C8C4F0222A51261A00379584 /* ApiRequestTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
